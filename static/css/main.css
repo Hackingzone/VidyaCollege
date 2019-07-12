@@ -1,0 +1,99 @@
+:root {
+    --color: #10DAF6;
+} 
+html {height: 100%;}
+body {
+		height: 100%;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+form {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: #FFF;
+    margin: 50px auto;
+    padding: 30px;
+    font-family: monospace, sans-serif;
+    box-shadow: 0px 0px 15px 3px #888;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.top {
+    display: flex;
+    position: relative;
+    height: 30px;
+    width: auto;
+    background: var(--color);
+    margin: -30px -30px 30px -30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px;
+    align-items: center;
+    color: white;
+    transition: all 1s ease;
+    //transition-delay: 1s;
+}
+#right {
+    display: block;
+    color: red;
+    padding-left: 280px;
+    padding-bottom: 40px;
+}
+.x:hover {
+    cursor: pointer;
+}
+label {
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    color: #888;
+    font-size: 16px;
+    z-index: 1;
+    transition: all .3s ease;
+}
+input {
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #888;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 2;
+}
+input:focus, input:valid, [type = "submit"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+input:focus + label, input:valid + label {
+    top: -40px;
+    font-size: 11px;
+    padding-top: 5.5px;
+    color: var(--color);
+}
+.div {
+    position: relative;
+    height: 30px;
+    width: auto;
+    background: none;
+}
+[type = "submit"] {
+    border: none;
+    background: var(--color);
+    border-radius: 10px;
+    color: white;
+}
+[type = "submit"]:hover {
+    cursor: pointer;
+} 
